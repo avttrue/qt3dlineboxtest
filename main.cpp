@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
     createEntityBox(QVector3D(-15.0f, -15.0f, -15.0f), QVector3D(15.0f, 15.0f, 15.0f), Qt::red, sphere);
 
     auto camera = window.camera();
-    camera->lens()->setPerspectiveProjection(60.0f, static_cast<float>(window.width()) / window.height(), 0.1f, 1000.0f);
+    camera->lens()->setPerspectiveProjection(45.0f, 16.0f/9.0f, 0.1f, 1000.0f);
     camera->setPosition(QVector3D(0.0f, 0.0f, 100.0f));
     camera->setViewCenter(QVector3D(0.0f, 0.0f, 0.0f));
 
